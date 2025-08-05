@@ -1,0 +1,25 @@
+{
+  "name": "api_node",
+  "version": "1.0.0",
+  "description": "Repositório para a aula de SW-II sobre Node.js",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauloaug07/api_node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauloaug07/api_node/issues"
+  },
+  "homepage": "https://github.com/pauloaug07/api_node#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  }
+}
