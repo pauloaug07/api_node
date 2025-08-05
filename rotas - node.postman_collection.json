@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "6ea7b3c0-bced-44c5-b17c-96d3a08933c9",
+		"name": "rotas - node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - cadastro",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/cadastro",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - cadastro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Aulo\",\r\n    \"idade\": 19,\r\n    \"email\": \"aulo@email.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/cadastro",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
