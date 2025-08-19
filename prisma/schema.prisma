@@ -11,5 +11,5 @@ model Usuario {
   id    String  @id @default(auto())  @map("_id") @db.ObjectId
   email String  @unique
   nome  String
-  idade Int
+  idade String
 }
