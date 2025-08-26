@@ -28,6 +28,33 @@ app.get('/usuarios', async (req,res)=>{
     res.status(200).json(lista_usuarios)
 })
 
+app.put('/cadastro/:id', async (req,res)=>{
+
+    await prisma.usuario.update({
+        where:{
+            id: req.params.id
+        },
+        data:{
+            email: req.body.email,
+            nome: req.body.nome,
+            idade: req.body.idade
+        }
+    })
+
+    res.status(201).json({"message": "Cliente atualizado"})
+})
+
+app.delete('/cadastro/:id', async (req,res)=>{
+
+    await prisma.usuario.delete({
+        where:{
+            id: req.params.id
+        }
+    })
+
+    res.status(200).json({"message": "Cliente removido"})
+})
+
 // PORTA LOCAL DO SERVIDOR
 app.listen(3000, () => {
     console.log('Servidor rodando')
